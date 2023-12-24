@@ -1,0 +1,112 @@
+/* Styles for the navigation bar */
+.navigation-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.navigation-bar h1 {
+    font-size: 24px;
+}
+
+.navigation-bar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-bar ul {
+    list-style: none;
+}
+
+.navigation-bar ul li {
+    display: inline;
+}
+
+.navigation-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Styles for the container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+/* Styles for the side bar */
+.side-bar {
+            width: 200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .side-bar ul {
+            list-style: none;
+        }
+
+        .side-bar ul li {
+            margin-bottom: 10px;
+        }
+
+        .side-bar ul li span.material-symbols-outlined {
+            display: inline-block;
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .side-bar ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Dashboard styles */
+        .dashboard {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .card {
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card .card-header {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .card .card-header .row {
+            align-items: center;
+        }
+
+        .card .card-header .col-md-8 {
+            font-size: 18px;
+        }
+
+        .card .card-header .col-md-2 {
+            text-align: right;
+        }
+
+        .card .card-body {
+            padding: 0;
+        }
+
+        .card .table {
+            margin-bottom: 0;
+        }
+
+        .modal-dialog {
+            max-width: 400px;
+        }

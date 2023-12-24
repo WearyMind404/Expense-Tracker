@@ -1,0 +1,88 @@
+/* Add your custom styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navigation-bar h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-bar {
+    background-color: #333;
+    color: #fff;
+    width: 20%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.side-bar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-bar li {
+    margin-bottom: 10px;
+}
+
+.dashboard {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.card-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-body th,
+.card-body td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-body .row {
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}

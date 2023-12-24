@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Bar Chart</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div style="width: 600px; height: 400px">
+        <canvas id="expenseChart"></canvas>
+    </div>
+    <script>
+        // Function to fetch data from the API
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://127.0.0.1:5000'); 
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const apiData = await response.text();
+              console.log(apiData)
+
+                // Parse the CSV data
+                const lines = apiData.split("<br>");
+                const data = lines.map(line => {
+                    const [year, expense] = line.split(",");
+                    return {
+                        year: parseInt(year),
+                        expense: parseFloat(expense)
+                    };
+                });
+
+                // Extract years and expenses for plotting
+                const years = data.map(item => item.year);
+                const expenses = data.map(item => item.expense);
+
+                // Create a bar chart
+                const ctx = document.getElementById('expenseChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: years,
+                        datasets: [{
+                            label: 'Expense',
+                            data: expenses,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        };
+
+        // Call the fetchData function to fetch and display the data
+        fetchData();
+    </script>
+</body>
+</html>

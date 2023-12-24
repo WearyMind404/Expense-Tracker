@@ -1,0 +1,22 @@
+
+{
+    "name": "username/expense-tracker",
+    "description": "composer.json",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Username\\ExpenseTracker\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php-ml/php-ml": "^0.9.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/php-ml/php-ml"
+        }
+    ]
+}

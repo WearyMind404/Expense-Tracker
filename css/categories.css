@@ -1,0 +1,125 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Navigation bar styles */
+.navigation-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.navigation-bar h1 {
+    font-size: 24px;
+}
+
+.navigation-bar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-bar ul {
+    list-style: none;
+}
+
+.navigation-bar ul li {
+    display: inline;
+}
+
+.navigation-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+
+/* Side bar styles */
+.side-bar {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-bar ul {
+    list-style: none;
+}
+
+.side-bar ul li {
+    margin-bottom: 10px;
+}
+
+.side-bar ul li span.material-symbols-outlined {
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.side-bar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Categories page styles */
+.categories-page {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.categories-page .card {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categories-page .card .card-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.categories-page .card .card-header .row {
+    align-items: center;
+}
+
+.categories-page .card .card-header .col-md-8 {
+    font-size: 18px;
+}
+
+.categories-page .card .card-header .col-md-2 {
+    text-align: right;
+}
+
+.categories-page .card .card-body {
+    padding: 0;
+}
+
+.categories-page .card .table {
+    margin-bottom: 0;
+}
+
+/* Modal styles */
+.modal-dialog {
+    max-width: 400px;
+}
